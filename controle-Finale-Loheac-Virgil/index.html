@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/style.css" />
+	      <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	      <script type="text/javascript" src="JS/indexJS.js"></script>
+        <title>Controle Finale</title>
+    </head>
+
+    <body onload="initialize()">
+        <header>
+            <div class="wrap">
+                <nav id="menu">
+                    <p>
+                      <a href="#"><img src="img/logo.png" alt="logo du site" id="logo"/></a>
+                    </p>
+                    <ul>
+                      <li><a href="#">Accueil</a></li>
+                      <li><a href="#">Titre1</a></li>
+                      <li id="listeContact"><a href="#">Contact</a></li>
+                    </ul>
+                    <form method="post" action="traitement.php">
+                      <input type="search" name="search" id="search" placeholder="search"/>
+                    </form>
+                </nav>
+                <nav id="menuMobile">
+                  <ul>
+                      <li><a href="#cache" title="cliquez pour ouvrir"><img src="img/logoBurger.png" alt="logo burger" id="logoBurger"/></a></li>
+                      <li><a href="#"><img src="img/logo.png" alt="logo" id="logo"/></a></li>
+                      <li><a href="tel:+33600000000"><img src="img/logoTel.png" alt="logo tel" id="logoTel"/></a></li>
+                  </ul>
+                  <p id="cache"><a href="#logoBurger" id="ferme" title="cliquez pour fermer"> et non il n'y a pas de menu ^^</a></p>
+                </nav>
+
+            </div>
+        </header>
+
+        <section id="slider">
+            <div class="wrap">
+                <div id="bandeau">
+                  <video src="img/Cat.mp4" controls width="100%"></video>
+                </div>
+            </div>
+        </section>
+
+        <section id="content">
+            <div class="wrap">
+              <article id="chatDef">
+                <h1>Le chat cet animal parfait</h1>
+                <p>Le Chat domestique (Felis silvestris catus) est la sous-espèce issue de la domestication du Chat sauvage, mammifère carnivore de la famille des Félidés.
+                  Il est l’un des principaux animaux de compagnie et compte aujourd’hui une cinquantaine de races différentes reconnues par les instances de certification. Dans de très nombreux pays, le chat entre dans le cadre de la législation sur les carnivores domestiques à l’instar du chien et du furet. Essentiellement territorial, le chat est un prédateur de petites proies comme les rongeurs ou les oiseaux. Les chats ont diverses vocalisations dont les ronronnements, les miaulements, les feulements ou les grognements, bien qu’ils communiquent principalement par des positions faciales et corporelles et des phéromones.
+                </p>
+                <p>
+                  Selon les résultats de travaux menés en 2006 et 20071, le chat domestique est une sous-espèce du chat sauvage (Felis silvestris) issue d’ancêtres appartenant à la sous-espèce du chat sauvage d’Afrique (Felis silvestris lybica). Les premières domestications auraient eu lieu il y a 8 000 à 10 000 ans au Néolithique dans le Croissant fertile, époque correspondant au début de la culture de céréales et à l’engrangement de réserves susceptibles d’être attaquées par des rongeurs, le chat devenant alors pour l’Homme un auxiliaire utile se prêtant à la domestication.
+                </p>
+                <p>
+                  Tout d’abord vénéré par les Égyptiens, il fut diabolisé en Europe au Moyen Âge et ne retrouva ses lettres de noblesse qu’au XVIIIe siècle. En Asie, le chat reste synonyme de chance, de richesse ou de longévité. Ce félin a laissé son empreinte dans la culture populaire et artistique, tant au travers d’expressions populaires que de représentations diverses au sein de la littérature, de la peinture ou encore de la musique.
+                  (by <a href="https://fr.wikipedia.org/wiki/Chat">WIKIPEDIA</a>)
+                </p>
+              </article>
+            <div id="flexArticle">
+              <article>
+                  <p class="p4"><img src="img/chat2.jpg"></p>
+                  <h3>Chat 1</h3>
+                  <p>Chat trop mignon numéro 1</p>
+                </article>
+                <article>
+                  <p class="p4"><img src="img/chat3.jpg"></p>
+                  <h3>Chat 2</h3>
+                  <p>Chat trop mignon numéro 2</p>
+                </article>
+                <article>
+                  <p class="p4"><img src="img/chat4.jpg"></p>
+                  <h3>Chat 3</h3>
+                  <p>Chat trop mignon numéro 3</p>
+                </article>
+                <article>
+                  <p class="p4"><img src="img/tiger.jpg"></p>
+                  <h3>Chat 4</h3>
+                  <p>Gros chat, mignon numéro 4</p>
+                </article>
+            </div>
+          </div>
+      </section>
+
+        <section id="blocMapsFormulaire">
+          <div class="wrap">
+            <article id="maps">
+                <h2>Trouver les meilleurs chats du monde ^^</h2>
+                <div id="barre">
+                  <div id="map_canvas"></div>
+                </div>
+            </article>
+
+            <article id="form">
+              <h2>Formulaire pour vous inscrire à notre super calendrier chat</h2>
+              <form method="post" action="traitement.php">
+                <p id ="formulaireFlex">
+                  <input type="text" placeholder="Prénom" name="prenom"/>
+                  <input type="text" placeholder="Nom" name="nom"/>
+                  <input type="date" placeholder="Date de naissance" name="dateDeN"/>
+                  <input type="text" placeholder="Ville de Naissance" name="villeDeN"/>
+                </p>
+                <p>
+                <input type="email" placeholder="Adresse email" name="email"/>
+                <input type="url" placeholder="Photo" name="Photo"/>
+                <textarea name="message" placeholder="Message">
+                </textarea>
+                </p>
+                <p id="bouton">
+                  <input type="submit" name="Envoyé"/>
+                </p>
+              </form>
+            </article>
+          </div>
+        </section>
+        <footer>
+          <div class="wrap">
+            <p>Loheac Virgil Groupe Developpeur Intégrateur Web/Web Mobile 2019</p>
+          </div>
+        </footer>
+    </body>
+</html>
